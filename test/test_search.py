@@ -76,6 +76,15 @@ tests.append({
     'output' : [6]
 })
 
+# list only contains the query
+tests.append({
+    'input' : {
+        'input' : [4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+        'query' : 4
+    },
+    'output' : [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+})
+
 
 
 @pytest.mark.parametrize('case',tests)
